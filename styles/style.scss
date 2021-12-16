@@ -25,9 +25,9 @@ body {
     overflow-x: hidden;
     transition: width 1s;
 
-    &:hover {
-        width: 300px;
-    }
+    // &:hover {
+    //     width: 300px;
+    // }
 
     ul {
         position: absolute;
@@ -97,7 +97,7 @@ body {
                     line-height: 70px;
                     text-align: center;
 
-                    ion-icon {
+                    .menu_ion_icon {
                         position: relative;
                         font-size: 1.5rem;
                         z-index: 1;
@@ -106,4 +106,14 @@ body {
             }
         }
     }
+}
+
+.cross_ico {
+    background-color: #4187f6;
+    height: 500px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
 }

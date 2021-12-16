@@ -34,10 +34,6 @@ body {
   transition: width 1s;
 }
 
-.navigation:hover {
-  width: 300px;
-}
-
 .navigation ul {
   position: absolute;
   top: 0;
@@ -114,9 +110,20 @@ body {
   text-align: center;
 }
 
-.navigation ul li .chose_menu .icon ion-icon {
+.navigation ul li .chose_menu .icon .menu_ion_icon {
   position: relative;
   font-size: 1.5rem;
   z-index: 1;
+}
+
+.cross_ico {
+  background-color: #4187f6;
+  height: 500px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 /*# sourceMappingURL=style.css.map */
