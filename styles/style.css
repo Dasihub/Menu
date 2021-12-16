@@ -32,6 +32,7 @@ body {
   overflow-x: hidden;
   -webkit-transition: width 1s;
   transition: width 1s;
+  border-radius: 10px;
 }
 
 .navigation ul {
@@ -125,5 +126,18 @@ body {
   visibility: hidden;
   -webkit-transition: 1s;
   transition: 1s;
+  border-radius: 0px 10px 10px 0px;
+}
+
+@media screen and (max-width: 700px) {
+  .cross_ico {
+    width: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
