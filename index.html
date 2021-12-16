@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li class="list active_menu">
+                <span class="chose_menu">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="title">Home</span>
+                </span>
+            </li>
+            <li class="list">
+                <span class="chose_menu">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <span class="title">Profile</span>
+                </span>
+            </li>
+            <li class="list">
+                <span class="chose_menu">
+                    <span class="icon"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></span>
+                    <span class="title">Messages</span>
+                </span>
+            </li>
+            <li class="list">
+                <span class="chose_menu">
+                    <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                    <span class="title">Setting</span>
+                </span>
+            </li>
+            <li class="list">
+                <span class="chose_menu">
+                    <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+                    <span class="title">Help</span>
+                </span>
+            </li>
+            <li class="list">
+                <span class="chose_menu">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <span class="title">Password</span>
+                </span>
+            </li>
+            <li class="list">
+                <span class="chose_menu">
+                    <span class="icon"><ion-icon name="log-in-outline"></ion-icon></span>
+                    <span class="title">Sign Out</span>
+                </span>
+            </li>
+        </ul>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+    const list = document.querySelectorAll('.list')
+    console.log(list);
+    list.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            clearActiveClass()
+            item.classList.add('active_menu')
+        })
+    })
+
+    function clearActiveClass() {
+        list.forEach(item => {
+            item.classList.remove('active_menu')
+        })
+    }
+</script>
+</body>
+</html>
